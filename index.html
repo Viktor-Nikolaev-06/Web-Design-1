@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Book your personal trainer</h1>
+      <p id="description">Fill out the form and select your gym trainer</p>
+
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal information</legend>
+        <label for="name" id="name-label">Your names: <input id="name" type="text" placeholder="Example Example" required></label>
+        <label for="email" id="email-label">Your email: <input id="email" type="email" placeholder="example@mail.com" required></label>
+        <label for="number" id="number-label"> Your age: <input id="number" type="number" min="14" max="75" placeholder="18" required>
+        </fieldset>
+        <fieldset>
+          <legend>Fitness information</legend>
+          <label for="dropdown" name="dropdown-label">Your fitness level:</label>
+          <select id="dropdown" required>
+            <option value="none" checked>None</option>
+            <option value="novice">Novice</option>
+            <option value="intermidiate">Intermidiate</option>
+            <option value="pro">Pro</option>
+            </select> 
+            <label>How many days a week would you train:<label>
+              <label name="radio-label" for="days" class="inline"><input type="radio" name="days" id="days" value="Don't Know" checked>I don't know</label>
+              <br>
+            <label name="radio-label" for="days" class="inline"><input type="radio" name="days" id="days" value="3-5">3-5</label>
+            <br>
+            <label name="radio-label" for="days" class="inline"><input type="radio" name="days" id="days" value="5-7">5-7</label>
+            <br>
+          <label class="inline">Please describe yourself</label>
+          <textarea></textarea>
+        </fieldset>
+        <fieldset>
+          
+          <label for="terms" name="terms-label" class="inline"><input type="checkbox" value="terms-and-conditions" class="inline"id="terms" required> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a><label>
+            <br>
+            <label class="inline" for="ads" name="ads-label"><input id="ads" value="ads" type="checkbox" class="inline"> I accept to recieve ads and newsletters</label>
+            
+
+            <input type="submit" id="submit">
+      </form>
+    </div>
+  </body>
+</html>
+
